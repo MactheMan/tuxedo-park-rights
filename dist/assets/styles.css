@@ -87,12 +87,23 @@ figcaption a { color: var(--green-2); }
 .impact-grid p { margin: 0; color: #c8d6d0; }
 
 .production-section { background: white; }
-.production-grid { display: grid; grid-template-columns: 1.04fr .72fr; align-items: start; gap: clamp(46px, 8vw, 100px); }
+.production-grid { display: grid; grid-template-columns: .92fr 1.08fr; align-items: start; gap: clamp(46px, 7vw, 90px); }
 blockquote { margin: 34px 0; padding: 24px 28px; border-left: 4px solid var(--gold); background: var(--cream); color: var(--green); font-family: Georgia, serif; font-size: 1.3rem; line-height: 1.45; }
 blockquote cite { display: block; margin-top: 12px; color: var(--muted); font-family: Inter, sans-serif; font-size: .76rem; font-style: normal; }
 .article-card { margin: 0; padding: 15px; border: 1px solid var(--line); border-radius: var(--radius); background: #f8f8f6; box-shadow: var(--shadow); }
 .article-card img { width: 100%; max-height: 620px; object-fit: cover; object-position: 50% 24%; border-radius: 10px; }
 .article-card a { display: block; }
+.photo-news-gallery { display: grid; grid-template-columns: .78fr 1.22fr; align-items: start; gap: 16px; }
+.photo-news-gallery .article-card img { height: 520px; max-height: none; object-fit: cover; object-position: top; }
+.publication-links { display: grid; grid-template-columns: .72fr 1.28fr; gap: 36px 70px; margin-top: 64px; padding-top: 36px; border-top: 1px solid var(--line); }
+.publication-links h3 { font-size: 1.65rem; }
+.publication-links p { margin-bottom: 0; color: var(--muted); }
+.publication-link-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.publication-link { display: flex; flex-direction: column; min-height: 170px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--cream); text-decoration: none; transition: transform .18s ease, border-color .18s ease; }
+.publication-link:hover, .publication-link:focus-visible { transform: translateY(-2px); border-color: #91a99e; }
+.publication-link span { color: var(--green-2); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.publication-link strong { margin-top: 14px; color: var(--green); font-family: Georgia, serif; font-size: 1.08rem; line-height: 1.3; }
+.publication-link small { margin-top: auto; padding-top: 16px; color: var(--muted); }
 
 .alternatives-section { background: var(--mint); }
 .standards-list { padding: 28px 28px 28px 50px; border-radius: var(--radius); background: white; box-shadow: var(--shadow); }
@@ -122,6 +133,26 @@ blockquote cite { display: block; margin-top: 12px; color: var(--muted); font-fa
 .button-light { background: white; color: #6f4714; }
 .button-outline-light { border-color: rgba(255,255,255,.7); color: white; }
 
+.contact-section { background: var(--cream); }
+.contact-grid { display: grid; grid-template-columns: .78fr 1.22fr; align-items: start; gap: clamp(46px, 8vw, 100px); }
+.contact-grid > div > p { color: #46534d; }
+.contact-note { margin-top: 28px; padding: 20px 22px; border-left: 4px solid var(--gold); background: white; }
+.resident-form { display: grid; gap: 18px; padding: clamp(24px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); background: white; box-shadow: var(--shadow); }
+.form-field { display: grid; gap: 7px; }
+.form-field label { color: var(--green); font-size: .82rem; font-weight: 800; }
+.form-field input, .form-field textarea { width: 100%; border: 1px solid #aab8b1; border-radius: 9px; background: #fbfcfb; color: var(--ink); font: inherit; padding: 12px 14px; }
+.form-field textarea { resize: vertical; min-height: 180px; }
+.form-field input:focus, .form-field textarea:focus { outline: 3px solid rgba(185,133,49,.24); border-color: var(--gold); }
+.consent-field { display: flex; align-items: flex-start; gap: 10px; color: #46534d; font-size: .78rem; line-height: 1.5; }
+.consent-field input { margin-top: 4px; }
+.resident-form .button { width: fit-content; cursor: pointer; }
+.form-recipient-note { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.5; }
+.form-trap { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+.thanks-page { display: grid; min-height: 100vh; place-items: center; padding: 30px; background: linear-gradient(125deg, #f8f6ef 0%, #edf4f0 100%); }
+.thanks-card { width: min(680px, 100%); padding: clamp(34px, 7vw, 70px); border: 1px solid var(--line); border-radius: var(--radius); background: white; box-shadow: var(--shadow); }
+.thanks-card h1 { font-size: clamp(2.4rem, 7vw, 4.6rem); }
+.thanks-card .button { margin-top: 18px; }
+
 footer { padding: 50px 0; background: #0d241d; color: #bfcfc8; font-size: .8rem; }
 .footer-grid { display: grid; grid-template-columns: 1fr .7fr 1.3fr; gap: 40px; }
 footer strong { color: white; font-family: Georgia, serif; font-size: 1.2rem; }
@@ -132,7 +163,7 @@ footer a { color: white; }
   .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 0; }
   nav { width: 100%; gap: 18px; overflow-x: auto; padding-bottom: 2px; }
   nav a { white-space: nowrap; }
-  .hero-grid, .split-grid, .production-grid, .action-grid { grid-template-columns: 1fr; }
+  .hero-grid, .split-grid, .production-grid, .publication-links, .action-grid, .contact-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 42px; }
   .hero-image { max-width: 680px; }
   .three-up, .document-grid { grid-template-columns: repeat(2, 1fr); }
@@ -153,7 +184,9 @@ footer a { color: white; }
   h2 { font-size: 2.15rem; }
   .button-row, .action-buttons { flex-direction: column; }
   .button { width: 100%; }
-  .three-up, .document-grid, .impact-grid, .contrast-card, .footer-grid { grid-template-columns: 1fr; }
+  .resident-form .button { width: 100%; }
+  .three-up, .document-grid, .impact-grid, .contrast-card, .photo-news-gallery, .publication-link-grid, .footer-grid { grid-template-columns: 1fr; }
+  .photo-news-gallery .article-card img { height: auto; }
   .impact-grid { border-left: 0; }
   .contrast-card > div + div { border-left: 0; border-top: 1px solid var(--line); }
   .point-card { min-height: 0; }
