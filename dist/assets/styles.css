@@ -68,6 +68,20 @@ figcaption a { color: var(--green-2); }
 .point-card .number { display: inline-block; margin-bottom: 36px; color: var(--gold); font-size: .76rem; font-weight: 900; letter-spacing: .12em; }
 .point-card p { margin: 0; color: var(--muted); }
 
+.owner-letter-section { background: white; }
+.open-letter { max-width: 980px; margin: 0 auto; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow); }
+.open-letter-header { padding: clamp(30px, 6vw, 62px); background: var(--cream); border-bottom: 1px solid var(--line); }
+.open-letter-header h2 { max-width: 850px; margin-bottom: 24px; }
+.letter-subject { max-width: 800px; margin: 0; color: #46534d; }
+.open-letter-body { max-width: 780px; margin: 0 auto; padding: clamp(30px, 7vw, 72px); }
+.open-letter-body > p { margin: 0 0 24px; }
+.open-letter-body > p:first-child { color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; }
+.letter-requests { margin: 6px 0 32px; padding-left: 24px; }
+.letter-requests li { margin: 0 0 13px; padding-left: 8px; }
+.letter-signature { margin-top: 42px !important; padding-top: 28px; border-top: 1px solid var(--line); color: #46534d; }
+.letter-signature strong { color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; }
+.letter-signature a { color: var(--green-2); }
+
 .distinction-section { background: var(--cream); }
 .split-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: start; gap: clamp(45px, 8vw, 110px); }
 .text-link { display: inline-block; margin-top: 12px; color: var(--green-2); font-weight: 800; text-decoration-thickness: 1px; text-underline-offset: 5px; }
