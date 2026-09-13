@@ -95,6 +95,11 @@ blockquote cite { display: block; margin-top: 12px; color: var(--muted); font-fa
 .article-card a { display: block; }
 .photo-news-gallery { display: grid; grid-template-columns: .78fr 1.22fr; align-items: start; gap: 16px; }
 .photo-news-gallery .article-card img { height: 520px; max-height: none; object-fit: cover; object-position: top; }
+.article-summary { padding: clamp(26px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); background: #f8f8f6; box-shadow: var(--shadow); }
+.article-summary h3 { color: var(--green); font-family: Georgia, serif; font-size: clamp(1.65rem, 2.6vw, 2.35rem); line-height: 1.16; }
+.article-summary > p:not(.eyebrow) { color: #46534d; }
+.article-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 28px; }
+.article-actions .text-link { margin: 4px 0; }
 .publication-links { display: grid; grid-template-columns: .72fr 1.28fr; gap: 36px 70px; margin-top: 64px; padding-top: 36px; border-top: 1px solid var(--line); }
 .publication-links h3 { font-size: 1.65rem; }
 .publication-links p { margin-bottom: 0; color: var(--muted); }
