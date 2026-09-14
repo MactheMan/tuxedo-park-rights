@@ -227,10 +227,11 @@ footer a { color: white; }
   .meeting-banner-inner { min-height: 0; align-items: flex-start; flex-direction: column; gap: 7px; padding-block: 16px; text-align: left; }
   .meeting-banner strong { font-size: 1.3rem; }
   .meeting-banner-inner > span:last-child { font-size: .875rem; }
-  .truth-banner-inner { grid-template-columns: 1fr; gap: 10px; padding-block: 21px; }
-  .truth-banner-label { width: fit-content; padding: 0 0 5px; border-right: 0; border-bottom: 2px solid var(--gold); }
-  .truth-banner strong { font-size: 1.45rem; }
-  .truth-banner p { margin-top: 9px; font-size: .94rem; line-height: 1.55; }
+  .truth-banner { border-top: 4px solid var(--gold-light); }
+  .truth-banner-inner { grid-template-columns: 1fr; gap: 14px; padding-block: 27px 30px; }
+  .truth-banner-label { width: fit-content; padding: 5px 10px; border: 0; border-radius: 999px; background: var(--gold-light); color: #12382e; font-size: .76rem; letter-spacing: .14em; }
+  .truth-banner strong { max-width: 340px; font-size: 1.72rem; line-height: 1.08; }
+  .truth-banner p { margin-top: 13px; color: #edf4f1; font-size: 1rem; line-height: 1.6; }
   .brand small { display: block; max-width: 250px; font-size: .72rem; line-height: 1.4; }
   nav { flex-wrap: wrap; gap: 6px 16px; overflow-x: visible; }
   nav a { display: inline-flex; align-items: center; min-height: 36px; font-size: .88rem; }
