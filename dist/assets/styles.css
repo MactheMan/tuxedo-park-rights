@@ -42,6 +42,12 @@ nav a:hover, nav a:focus-visible { color: var(--green-2); }
 .meeting-banner strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; line-height: 1.2; }
 .meeting-banner-inner > span:last-child { font-size: .88rem; }
 
+.truth-banner { background: var(--green); color: white; border-bottom: 1px solid #0d2c24; }
+.truth-banner-inner { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: clamp(22px, 4vw, 54px); padding-block: 25px; }
+.truth-banner-label { padding-right: clamp(22px, 4vw, 54px); border-right: 1px solid rgba(242,200,121,.45); color: var(--gold-light); font-size: .72rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; }
+.truth-banner strong { display: block; color: white; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.4rem, 2.2vw, 2rem); line-height: 1.15; }
+.truth-banner p { max-width: 940px; margin: 8px 0 0; color: #d8e5df; font-size: .96rem; line-height: 1.55; }
+
 .hero { padding: 74px 0 66px; background: linear-gradient(125deg, #f8f6ef 0%, #edf4f0 100%); border-bottom: 1px solid var(--line); }
 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(42px, 7vw, 90px); }
 .hero-copy { padding-block: 20px; }
@@ -221,6 +227,10 @@ footer a { color: white; }
   .meeting-banner-inner { min-height: 0; align-items: flex-start; flex-direction: column; gap: 7px; padding-block: 16px; text-align: left; }
   .meeting-banner strong { font-size: 1.3rem; }
   .meeting-banner-inner > span:last-child { font-size: .875rem; }
+  .truth-banner-inner { grid-template-columns: 1fr; gap: 10px; padding-block: 21px; }
+  .truth-banner-label { width: fit-content; padding: 0 0 5px; border-right: 0; border-bottom: 2px solid var(--gold); }
+  .truth-banner strong { font-size: 1.45rem; }
+  .truth-banner p { margin-top: 9px; font-size: .94rem; line-height: 1.55; }
   .brand small { display: block; max-width: 250px; font-size: .72rem; line-height: 1.4; }
   nav { flex-wrap: wrap; gap: 6px 16px; overflow-x: visible; }
   nav a { display: inline-flex; align-items: center; min-height: 36px; font-size: .88rem; }
