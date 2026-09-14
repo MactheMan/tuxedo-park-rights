@@ -76,6 +76,16 @@ figcaption a { color: var(--green-2); }
 .open-letter-body { max-width: 780px; margin: 0 auto; padding: clamp(30px, 7vw, 72px); }
 .open-letter-body > p { margin: 0 0 24px; }
 .open-letter-body > p:first-child { color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; }
+.letter-continuation { margin-top: 34px; border-top: 1px solid var(--line); }
+.letter-continuation summary { display: flex; align-items: center; justify-content: center; min-height: 52px; margin-top: 28px; padding: 12px 22px; border: 1px solid var(--green); border-radius: 999px; background: var(--green); color: white; font-weight: 750; line-height: 1.4; text-align: center; cursor: pointer; list-style: none; transition: background .18s ease, transform .18s ease; }
+.letter-continuation summary::-webkit-details-marker { display: none; }
+.letter-continuation summary:hover { background: var(--green-2); transform: translateY(-2px); }
+.letter-continuation summary:focus-visible { outline: 3px solid rgba(185,133,49,.34); outline-offset: 3px; }
+.letter-continuation .summary-open { display: none; }
+.letter-continuation[open] .summary-closed { display: none; }
+.letter-continuation[open] .summary-open { display: inline; }
+.letter-continuation-body { padding-top: 34px; }
+.letter-continuation-body > p { margin: 0 0 24px; }
 .letter-requests { margin: 6px 0 32px; padding-left: 24px; }
 .letter-requests li { margin: 0 0 13px; padding-left: 8px; }
 .letter-signature { margin-top: 42px !important; padding-top: 28px; border-top: 1px solid var(--line); color: #46534d; }
