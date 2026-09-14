@@ -36,6 +36,12 @@ nav { display: flex; align-items: center; gap: 24px; }
 nav a { text-decoration: none; color: #31423a; font-weight: 650; font-size: .9rem; }
 nav a:hover, nav a:focus-visible { color: var(--green-2); }
 
+.meeting-banner { background: #9c6a25; color: white; border-bottom: 1px solid #7f531a; }
+.meeting-banner-inner { min-height: 64px; display: flex; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+.meeting-banner-label { padding: 5px 10px; border: 1px solid rgba(255,255,255,.7); border-radius: 999px; font-size: .72rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.meeting-banner strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; line-height: 1.2; }
+.meeting-banner-inner > span:last-child { font-size: .88rem; }
+
 .hero { padding: 74px 0 66px; background: linear-gradient(125deg, #f8f6ef 0%, #edf4f0 100%); border-bottom: 1px solid var(--line); }
 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(42px, 7vw, 90px); }
 .hero-copy { padding-block: 20px; }
@@ -212,6 +218,9 @@ footer a { color: white; }
   body { font-size: 16px; }
   .notice-inner { align-items: flex-start; flex-direction: column; gap: 2px; padding: 8px 0; }
   .site-header { position: static; }
+  .meeting-banner-inner { min-height: 0; align-items: flex-start; flex-direction: column; gap: 7px; padding-block: 16px; text-align: left; }
+  .meeting-banner strong { font-size: 1.3rem; }
+  .meeting-banner-inner > span:last-child { font-size: .875rem; }
   .brand small { display: block; max-width: 250px; font-size: .72rem; line-height: 1.4; }
   nav { flex-wrap: wrap; gap: 6px 16px; overflow-x: visible; }
   nav a { display: inline-flex; align-items: center; min-height: 36px; font-size: .88rem; }
