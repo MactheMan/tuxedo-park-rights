@@ -15,7 +15,7 @@ const borders = { top: border, bottom: border, left: border, right: border };
 
 function p(text, options = {}) {
   return new Paragraph({
-    spacing: { after: options.after ?? 160, line: 300 },
+    spacing: { after: options.after ?? 130, line: 280 },
     alignment: options.alignment,
     keepNext: options.keepNext,
     children: [new TextRun({
@@ -30,7 +30,7 @@ function p(text, options = {}) {
 
 function mixed(runs, options = {}) {
   return new Paragraph({
-    spacing: { after: options.after ?? 160, line: 300 },
+    spacing: { after: options.after ?? 130, line: 280 },
     alignment: options.alignment,
     keepNext: options.keepNext,
     children: runs
@@ -58,7 +58,7 @@ function labelRow(label, value) {
 function bullet(text) {
   return new Paragraph({
     numbering: { reference: "relief", level: 0 },
-    spacing: { after: 110, line: 290 },
+    spacing: { after: 90, line: 270 },
     children: [new TextRun(text)]
   });
 }
@@ -110,10 +110,15 @@ const children = [
   p("“I would file an appeal now on both requests. There is no reason to wait until Thursday.”", { bold: true, color: green }),
   p("Mr. Ebermann further wrote: “Once the appeal is received, the Village has 10 business days to respond in writing. If it does not, that is another deemed denial and you can consider an Article 78 proceeding.” He also advised requesting rolling production so that readily available records are not withheld while older material is being located. The Coalition’s response is advisory and is attached as Exhibit D."),
 
+  new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun("Request to adjourn the September 17 hearing")] }),
+  p("Because the outstanding records concern the origin, factual basis, drafting, scope, and intended enforcement of the proposed law, we respectfully request that the Board adjourn the September 17 public hearing and defer any vote or other action until the Village has produced the responsive records on a rolling basis and residents have had a reasonable opportunity to review them."),
+  p("If the Board proceeds on September 17, please include this appeal and all supporting exhibits in the public-hearing and legislative record and keep the hearing open until the overdue records have been produced and reviewed. We recognize that FOIL itself does not automatically require the Board to postpone the hearing; this request is made to protect an informed, transparent, and fair public process."),
+
   new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun("Relief requested")] }),
   p("We respectfully request that the appeal recipient:"),
   bullet("Accept this consolidated appeal and reverse both constructive denials;"),
   bullet("Direct the immediate production of all readily available responsive records and require rolling production as additional records are located and reviewed;"),
+  bullet("Adjourn the September 17 public hearing and defer any vote or other action until the responsive records have been produced and residents have had a reasonable opportunity to review them, or, at minimum, keep the hearing open;"),
   bullet("For any withheld or redacted material, identify the record or category and provide the specific statutory basis for withholding, while disclosing all reasonably segregable nonexempt portions;"),
   bullet("For any requested record the Village does not possess or cannot locate after diligent search, provide the certification authorized by Public Officers Law §89(3)(a);"),
   bullet("Identify a date certain for completing each production and the official responsible for each request;"),
@@ -145,17 +150,17 @@ const children = [
 
 const doc = new Document({
   styles: {
-    default: { document: { run: { font: "Arial", size: 22, color: "1F2B27" } } },
+    default: { document: { run: { font: "Arial", size: 21, color: "1F2B27" } } },
     paragraphStyles: [
       {
         id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true,
-        run: { font: "Arial", size: 34, bold: true, color: green },
+        run: { font: "Arial", size: 32, bold: true, color: green },
         paragraph: { spacing: { before: 0, after: 120 }, outlineLevel: 0 }
       },
       {
         id: "Heading2", name: "Heading 2", basedOn: "Normal", next: "Normal", quickFormat: true,
-        run: { font: "Arial", size: 26, bold: true, color: green },
-        paragraph: { spacing: { before: 260, after: 110 }, outlineLevel: 1, keepNext: true }
+        run: { font: "Arial", size: 25, bold: true, color: green },
+        paragraph: { spacing: { before: 220, after: 90 }, outlineLevel: 1, keepNext: true }
       }
     ]
   },
@@ -195,7 +200,7 @@ const doc = new Document({
     properties: {
       page: {
         size: { width: 12240, height: 15840 },
-        margin: { top: 900, right: 1440, bottom: 950, left: 1440 }
+        margin: { top: 800, right: 1400, bottom: 850, left: 1400 }
       }
     },
     headers: {
