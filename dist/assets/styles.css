@@ -204,6 +204,9 @@ footer { padding: 50px 0; background: #0d241d; color: #bfcfc8; font-size: .8rem;
 footer strong { color: white; font-family: Georgia, serif; font-size: 1.2rem; }
 footer p { margin: 6px 0; }
 footer a { color: white; }
+.contact-list-disclaimer { margin-top: 34px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.2); }
+.contact-list-disclaimer strong { display: block; margin-bottom: 8px; font-family: inherit; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+.contact-list-disclaimer p { max-width: 92ch; line-height: 1.65; }
 
 @media (max-width: 900px) {
   .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 0; }
