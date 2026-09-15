@@ -379,15 +379,10 @@
         <div>
           <p class="eyebrow">Make your voice part of the record</p>
           <h2>Write directly to the Mayor, Trustees, and Village Clerk.</h2>
-          <p>Use this form to share your own views about Chapter 51 and private-property rights. Your message will be sent to Mayor Marc Citrin, Trustees Michele Lindsay, Joshua Scherer, Matthew Tinari, and Jedediah Turner, and the Village Clerk.</p>
-          <p class="contact-note"><strong>Please write in your own words.</strong> Your name, property address, email address, and message will be delivered to public officials and may become part of the Village’s public record.</p>
+          <p>Use this form to prepare an email sharing your own views about Chapter 51 and private-property rights. The Mayor, Trustees, and Village Clerk will all appear in the email’s To field.</p>
+          <p class="contact-note"><strong>Please write in your own words.</strong> Your email application will open with your information and message. Review the email and press Send to deliver it to the listed public officials; it may become part of the Village’s public record.</p>
         </div>
-        <form class="resident-form" action="https://formsubmit.co/mac4tux@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Tuxedo Park resident comment concerning Chapter 51">
-          <input type="hidden" name="_cc" value="mcitrin@tuxedopark-ny.gov,mlindsay@tuxedopark-ny.gov,jscherer@tuxedopark-ny.gov,mtinari@tuxedopark-ny.gov,jturner@tuxedopark-ny.gov,clerk@tuxedopark-ny.gov">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://tuxedoparkrights.org/thanks.html">
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-trap" aria-hidden="true">
+        <form class="resident-form" id="resident-email-form">
           <div class="form-field">
             <label for="resident-name">Full name</label>
             <input id="resident-name" name="Name" type="text" autocomplete="name" required>
@@ -405,8 +400,8 @@
             <textarea id="resident-message" name="Message" rows="9" required placeholder="Share your own views about the proposed law and its effect on property rights."></textarea>
           </div>
           <label class="consent-field"><input type="checkbox" name="Delivery consent" value="Confirmed" required> <span>I understand this information will be emailed to the listed Village officials and may become a public record.</span></label>
-          <button class="button button-primary" type="submit">Send to Village officials</button>
-          <p class="form-recipient-note">Recipients: Mayor Marc Citrin · Trustees Michele Lindsay, Joshua Scherer, Matthew Tinari, and Jedediah Turner · Village Clerk</p>
+          <button class="button button-primary" type="submit">Open email to Village officials</button>
+          <p class="form-recipient-note">To: Mayor Marc Citrin · Trustees Michele Lindsay, Joshua Scherer, Matthew Tinari, and Jedediah Turner · Village Clerk · No Cc or Bcc recipients</p>
         </form>
       </div>
     </section>
@@ -419,5 +414,37 @@
       <div><p>This site expresses the authors’ views and provides source materials for public review. It is not affiliated with or endorsed by the Village of Tuxedo Park.</p></div>
     </div>
   </footer>
+  <script>
+    document.getElementById('resident-email-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const recipients = [
+        'mcitrin@tuxedopark-ny.gov',
+        'mlindsay@tuxedopark-ny.gov',
+        'jscherer@tuxedopark-ny.gov',
+        'mtinari@tuxedopark-ny.gov',
+        'jturner@tuxedopark-ny.gov',
+        'clerk@tuxedopark-ny.gov'
+      ].join(',');
+
+      const name = document.getElementById('resident-name').value.trim();
+      const address = document.getElementById('resident-address').value.trim();
+      const email = document.getElementById('resident-email').value.trim();
+      const message = document.getElementById('resident-message').value.trim();
+      const subject = 'Tuxedo Park resident comment concerning Chapter 51';
+      const body = [
+        message,
+        '',
+        'Respectfully,',
+        name,
+        address,
+        email
+      ].join('\n');
+
+      window.location.href = 'mailto:' + recipients
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+    });
+  </script>
 </body>
 </html>
