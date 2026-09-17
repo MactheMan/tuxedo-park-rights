@@ -9,6 +9,12 @@
   <meta name="theme-color" content="#163d32">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23163d32'/%3E%3Cpath d='M12 45h40v5H12zM17 43V26l15-12 15 12v17h-7V29H24v14z' fill='%23f2c879'/%3E%3Cpath d='M8 54c7-4 13-4 20 0s13 4 20 0 9-3 12-1v5H8z' fill='%238bc1b1'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -540,6 +546,37 @@
     </div>
   </footer>
   <script>
+    function trackEvent(name, data) {
+      if (typeof window.va === 'function') {
+        window.va('event', { name: name, data: data || {} });
+      }
+    }
+
+    document.addEventListener('click', function (event) {
+      const link = event.target.closest('a[href]');
+      if (!link) return;
+
+      const href = link.getAttribute('href') || '';
+      const label = (link.querySelector('strong')?.textContent || link.textContent || '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 200);
+
+      if (href.startsWith('documents/')) {
+        trackEvent('Document Open', {
+          document: decodeURIComponent(href.split('/').pop()),
+          label: label
+        });
+      } else if (href === '#contact') {
+        trackEvent('Contact Board Click', { label: label });
+      } else if (/^https?:\/\//.test(href) && !href.includes('tuxedoparkrights.org')) {
+        trackEvent('External Link Click', {
+          destination: new URL(href).hostname,
+          label: label
+        });
+      }
+    });
+
     document.getElementById('resident-email-form').addEventListener('submit', function (event) {
       event.preventDefault();
 
@@ -566,6 +603,8 @@
         address,
         email
       ].join('\n');
+
+      trackEvent('Board Email Prepared', { destination: 'Village officials' });
 
       window.location.href = 'mailto:' + recipients
         + '?bcc=' + encodeURIComponent(bccRecipient)
