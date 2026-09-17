@@ -299,8 +299,8 @@
         <div>
           <p class="eyebrow">Make your voice part of the record</p>
           <h2>Write directly to the Mayor, Trustees, and Village Clerk.</h2>
-          <p>Use this form to prepare an email sharing your own views about Chapter 51 and private-property rights. The Mayor, Trustees, and Village Clerk will all appear in the email’s To field.</p>
-          <p class="contact-note"><strong>Please write in your own words.</strong> Your email application will open with your information and message. Review the email and press Send to deliver it to the listed public officials; it may become part of the Village’s public record.</p>
+          <p>Use this form to prepare an email sharing your own views about Chapter 51 and private-property rights. The Mayor, Trustees, and Village Clerk will all appear in the email’s To field. David McFadden will receive a Bcc copy for submission counting and recordkeeping.</p>
+          <p class="contact-note"><strong>Please write in your own words.</strong> Your email application will open with your information, message, and recipient fields. Review the email and press Send to deliver it to the listed public officials; it may become part of the Village’s public record.</p>
         </div>
         <form class="resident-form" id="resident-email-form">
           <div class="form-field">
@@ -319,9 +319,9 @@
             <label for="resident-message">Your message</label>
             <textarea id="resident-message" name="Message" rows="9" required placeholder="Share your own views about the proposed law and its effect on property rights."></textarea>
           </div>
-          <label class="consent-field"><input type="checkbox" name="Delivery consent" value="Confirmed" required> <span>I understand this information will be emailed to the listed Village officials and may become a public record.</span></label>
+          <label class="consent-field"><input type="checkbox" name="Delivery consent" value="Confirmed" required> <span>I understand this information will be emailed to the listed Village officials, copied to David McFadden by Bcc for submission counting and recordkeeping, and may become a public record.</span></label>
           <button class="button button-primary" type="submit">Open email to Village officials</button>
-          <p class="form-recipient-note">To: Mayor Marc Citrin · Trustees Michele Lindsay, Joshua Scherer, Matthew Tinari, and Jedediah Turner · Village Clerk · No Cc or Bcc recipients</p>
+          <p class="form-recipient-note">To: Mayor Marc Citrin · Trustees Michele Lindsay, Joshua Scherer, Matthew Tinari, and Jedediah Turner · Village Clerk · Bcc: David McFadden (submission count and recordkeeping) · No Cc recipients</p>
         </form>
       </div>
     </section>
@@ -551,6 +551,7 @@
         'jturner@tuxedopark-ny.gov',
         'clerk@tuxedopark-ny.gov'
       ].join(',');
+      const bccRecipient = 'mac4tux@gmail.com';
 
       const name = document.getElementById('resident-name').value.trim();
       const address = document.getElementById('resident-address').value.trim();
@@ -567,7 +568,8 @@
       ].join('\n');
 
       window.location.href = 'mailto:' + recipients
-        + '?subject=' + encodeURIComponent(subject)
+        + '?bcc=' + encodeURIComponent(bccRecipient)
+        + '&subject=' + encodeURIComponent(subject)
         + '&body=' + encodeURIComponent(body);
     });
   </script>
