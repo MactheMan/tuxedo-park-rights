@@ -98,6 +98,8 @@ figcaption a { color: var(--green-2); }
 .meeting-feature-title { display: flex; flex-direction: column; gap: 7px; width: 100%; max-width: 720px; margin: 0; padding: 18px 22px; border: 2px solid var(--gold); border-radius: 12px; color: var(--gold-light) !important; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.65rem, 2.8vw, 2.65rem); font-weight: 700; line-height: 1.08; }
 .meeting-feature-title span { font-family: Inter, sans-serif; font-size: .78rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
 .featured-update h3 { max-width: 680px; margin-top: 32px; color: white; font-size: clamp(2rem, 3.4vw, 3.3rem); line-height: 1.08; }
+.tax-headline-tagline { margin: -6px 0 22px; color: #9c6a25; font-size: clamp(1rem, 1.5vw, 1.18rem); font-weight: 800; line-height: 1.35; }
+.featured-update .tax-headline-tagline { color: var(--gold-light); }
 .featured-update p { max-width: 670px; color: #d8e5df; }
 .featured-update-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: auto; padding-top: 28px; }
 .featured-update .button-light { color: var(--green); }
