@@ -251,12 +251,52 @@ footer a { color: white; }
 .contact-list-disclaimer strong { display: block; margin-bottom: 8px; font-family: inherit; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
 .contact-list-disclaimer p { max-width: 92ch; line-height: 1.65; }
 
+.tax-hero { padding: clamp(70px, 9vw, 118px) 0; background: linear-gradient(125deg, #f8f6ef 0%, #edf4f0 100%); border-bottom: 1px solid var(--line); }
+.tax-hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); align-items: center; gap: clamp(46px, 8vw, 104px); }
+.tax-hero h1 { max-width: 850px; font-size: clamp(2.65rem, 5.4vw, 5.5rem); }
+.tax-hero-context { padding: clamp(28px, 4vw, 44px); border: 1px solid #c5d1cb; border-top: 5px solid var(--gold); border-radius: var(--radius); background: rgba(255,255,255,.78); box-shadow: var(--shadow); }
+.tax-hero-context span { display: block; color: #8b5f1f; font-size: .72rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.tax-hero-context strong { display: block; margin-top: 18px; color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem, 2.2vw, 2rem); line-height: 1.2; }
+.tax-hero-context p { margin: 22px 0 0; color: #46534d; }
+
+.tax-memo-section { background: white; }
+.tax-memo-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(380px, 1.1fr); align-items: stretch; gap: clamp(40px, 8vw, 100px); }
+.tax-memo-grid .section-heading { margin: 0; }
+.memo-download-card { display: flex; flex-direction: column; min-height: 390px; padding: clamp(30px, 5vw, 52px); border-radius: var(--radius); background: var(--green); color: white; box-shadow: var(--shadow); }
+.memo-download-card > span { color: var(--gold-light); font-size: .76rem; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+.memo-download-card h3 { max-width: 600px; margin-top: 26px; color: white; font-size: clamp(2rem, 3vw, 3rem); }
+.memo-download-card p { max-width: 640px; color: #d8e5df; }
+.memo-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; margin-top: auto; padding-top: 28px; }
+.memo-actions .text-link { color: white; }
+
+.tax-findings-section { background: #eef4f1; border-block: 1px solid var(--line); }
+.tax-findings-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid #bfcfc8; border-left: 1px solid #bfcfc8; }
+.tax-findings-grid article { min-height: 290px; padding: clamp(28px, 4vw, 44px); border-right: 1px solid #bfcfc8; border-bottom: 1px solid #bfcfc8; background: rgba(255,255,255,.4); }
+.tax-findings-grid article > span { color: var(--gold); font-size: .76rem; font-weight: 900; letter-spacing: .12em; }
+.tax-findings-grid h3 { margin-top: 34px; font-size: clamp(1.45rem, 2.2vw, 2rem); }
+.tax-findings-grid p { margin-bottom: 0; color: #46534d; }
+
+.tax-exhibits-section { background: var(--cream); }
+.tax-exhibits-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 44px; }
+.tax-exhibits-heading .section-heading { margin: 0; }
+.tax-exhibits-heading > .button { flex: 0 0 auto; margin-bottom: 8px; }
+.tax-exhibit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.tax-exhibit-card { display: flex; flex-direction: column; min-height: 230px; padding: 28px; border: 1px solid #cfd7d2; border-radius: 14px; background: white; color: var(--ink); text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.tax-exhibit-card:hover, .tax-exhibit-card:focus-visible { transform: translateY(-3px); border-color: #91a99e; box-shadow: 0 12px 30px rgba(22,61,50,.09); }
+.tax-exhibit-card span { color: #8b5f1f; font-size: .76rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.tax-exhibit-card strong { margin-top: 22px; color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; line-height: 1.25; }
+.tax-exhibit-card small { margin-top: auto; padding-top: 22px; color: var(--muted); font-size: .86rem; line-height: 1.55; }
+.tax-source-note { max-width: 1000px; margin: 42px 0 0; padding: 24px 28px; border-left: 4px solid var(--gold); background: white; color: #46534d; }
+
 @media (max-width: 900px) {
   .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 0; }
   nav { width: 100%; gap: 18px; overflow-x: auto; padding-bottom: 2px; }
   nav a { white-space: nowrap; }
   .hero-grid, .split-grid, .production-grid, .archive-note, .publication-links, .action-grid, .contact-grid { grid-template-columns: 1fr; }
   .latest-intro, .latest-grid, .archive-intro-grid { grid-template-columns: 1fr; }
+  .tax-hero-grid, .tax-memo-grid { grid-template-columns: 1fr; }
+  .tax-hero-context { max-width: 680px; }
+  .tax-exhibits-heading { align-items: flex-start; flex-direction: column; }
   .hero { padding-top: 42px; }
   .hero-image { max-width: 680px; }
   .three-up, .document-grid { grid-template-columns: repeat(2, 1fr); }
@@ -312,6 +352,19 @@ footer a { color: white; }
   .button { width: 100%; }
   .resident-form .button { width: 100%; }
   .three-up, .document-grid, .impact-grid, .contrast-card, .photo-news-gallery, .publication-link-grid, .footer-grid { grid-template-columns: 1fr; }
+  .tax-hero { padding: 60px 0; }
+  .tax-hero h1 { font-size: clamp(2.35rem, 12vw, 3.3rem); }
+  .tax-hero-context { padding: 26px 22px; }
+  .tax-memo-grid { gap: 30px; }
+  .memo-download-card { min-height: 0; padding: 30px 24px; }
+  .memo-download-card h3 { font-size: 2rem; }
+  .memo-actions { align-items: stretch; flex-direction: column; }
+  .memo-actions .text-link { padding: 8px 0; text-align: center; }
+  .tax-findings-grid, .tax-exhibit-grid { grid-template-columns: 1fr; }
+  .tax-findings-grid article { min-height: 0; }
+  .tax-exhibits-heading > .button { width: 100%; }
+  .tax-exhibit-card { min-height: 210px; }
+  .tax-source-note { padding: 22px 20px; }
   .photo-news-gallery .article-card img { height: auto; }
   .impact-grid { border-left: 0; }
   .contrast-card > div + div { border-left: 0; border-top: 1px solid var(--line); }
