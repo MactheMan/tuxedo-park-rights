@@ -284,7 +284,7 @@ footer a { color: white; }
   .update-strip-date { padding-right: 0; border-right: 0; white-space: normal; }
   .update-strip p { font-size: .94rem; line-height: 1.45; }
   .update-strip a { width: fit-content; }
-  .brand small { display: block; max-width: 250px; font-size: .72rem; line-height: 1.4; }
+  .brand small { display: block; max-width: 250px; font-size: .78rem; line-height: 1.4; }
   nav { flex-wrap: wrap; gap: 2px 16px; overflow-x: visible; padding-bottom: 0; }
   nav a { display: inline-flex; align-items: center; min-height: 32px; font-size: .84rem; }
   .section { padding: 68px 0; }
@@ -293,17 +293,19 @@ footer a { color: white; }
   .latest-intro { gap: 18px; margin-bottom: 28px; }
   .featured-update { min-height: 0; padding: 28px 24px; }
   .meeting-feature-title { padding: 17px 18px; font-size: 1.75rem; }
-  .meeting-feature-title span { font-size: .74rem; }
+  .meeting-feature-title span { font-size: .76rem; }
   .featured-update h3 { margin-top: 26px; font-size: 1.7rem; }
   .featured-update-links { align-items: stretch; flex-direction: column; }
   .featured-update-links .text-link { padding: 8px 0; text-align: center; }
   .recent-updates-heading, .recent-update { padding-inline: 23px; }
+  .update-strip-date span, .recent-update span { font-size: .75rem; }
   .archive-intro { padding: 54px 0 50px; }
   .record-section .document-group-title { font-size: .76rem; letter-spacing: .075em; }
   .meeting-recap { margin-top: 30px; padding: 24px 20px; }
   .meeting-recap blockquote { padding: 20px; font-size: 1.08rem; }
   .byline, figcaption { font-size: .875rem; }
   .document-card small { font-size: .875rem; line-height: 1.55; }
+  .document-card span { font-size: .76rem; }
   .form-recipient-note, .consent-field { font-size: .825rem; }
   footer { font-size: .875rem; }
   .button-row, .action-buttons { flex-direction: column; }
