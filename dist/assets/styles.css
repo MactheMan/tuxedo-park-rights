@@ -101,6 +101,13 @@ figcaption a { color: var(--green-2); }
 .tax-headline-tagline { margin: -6px 0 22px; color: #9c6a25; font-size: clamp(1rem, 1.5vw, 1.18rem); font-weight: 800; line-height: 1.35; }
 .featured-update .tax-headline-tagline { color: var(--gold-light); }
 .featured-update p { max-width: 670px; color: #d8e5df; }
+.tax-record-callout { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 18px 30px; margin: -4px 0 34px; padding: 22px 26px; border: 1px solid #d4b06e; border-left: 5px solid var(--gold); border-radius: 14px; background: #fff9ea; color: var(--green); text-decoration: none; transition: transform .18s ease, box-shadow .18s ease; }
+.tax-record-callout:hover, .tax-record-callout:focus-visible { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(22,61,50,.09); }
+.tax-record-callout > span { color: #8b5f1f; font-size: .72rem; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
+.tax-record-callout strong, .tax-record-callout small { display: block; }
+.tax-record-callout strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; line-height: 1.2; }
+.tax-record-callout small { margin-top: 4px; color: #5b655f; font-size: .82rem; }
+.tax-record-callout b { color: #7e541a; font-size: .8rem; white-space: nowrap; }
 .featured-update-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: auto; padding-top: 28px; }
 .featured-update .button-light { color: var(--green); }
 .featured-update .text-link { margin: 0; color: white; }
@@ -342,6 +349,11 @@ footer a { color: white; }
   .archive-intro { padding: 54px 0 50px; }
   .record-section .document-group-title { font-size: .76rem; letter-spacing: .075em; }
   .meeting-recap { margin-top: 30px; padding: 24px 20px; }
+  .tax-record-callout { grid-template-columns: 1fr; gap: 10px; margin-bottom: 30px; padding: 22px 20px; }
+  .tax-record-callout > span { font-size: .75rem; }
+  .tax-record-callout strong { font-size: 1.25rem; }
+  .tax-record-callout small { font-size: .875rem; }
+  .tax-record-callout b { margin-top: 4px; }
   .meeting-recap blockquote { padding: 20px; font-size: 1.08rem; }
   .byline, figcaption { font-size: .875rem; }
   .document-card small { font-size: .875rem; line-height: 1.55; }
