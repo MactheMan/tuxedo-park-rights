@@ -5,9 +5,122 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/taxesandinfrastructure",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastructure/",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastructure/index",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastructure/index.html",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Administrative_Appeal_Two_Constructive_FOIL_Denials_September_15_2026.html",
+      "destination": "/records/foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Administrative_Appeal_Two_Constructive_FOIL_Denials_September_15_2026",
+      "destination": "/records/foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Coalition_Response_FOIL_Deadlines_September_15_2026.html",
+      "destination": "/records/coalition-foil-response-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Coalition_Response_FOIL_Deadlines_September_15_2026",
+      "destination": "/records/coalition-foil-response-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Police_FOIL_Response_September_16_2026.html",
+      "destination": "/records/police-foil-response-september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Police_FOIL_Response_September_16_2026",
+      "destination": "/records/police-foil-response-september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Request_August_20_2026_Meeting_Recording.html",
+      "destination": "/records/august-2026-recording-request",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Request_August_20_2026_Meeting_Recording",
+      "destination": "/records/august-2026-recording-request",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Follow-Up_Proposed_Law_Also_Reaches_Waterfront_Docks.html",
+      "destination": "/records/waterfront-docks-follow-up",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Follow-Up_Proposed_Law_Also_Reaches_Waterfront_Docks",
+      "destination": "/records/waterfront-docks-follow-up",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Sent_FOIL_Administrative_Appeal_Email_September_15_2026.html",
+      "destination": "/records/sent-foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Sent_FOIL_Administrative_Appeal_Email_September_15_2026",
+      "destination": "/records/sent-foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/thanks",
+      "destination": "/participate",
+      "statusCode": 301
+    },
+    {
+      "source": "/thanks.html",
+      "destination": "/participate",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings/september-2026/featured-comments",
+      "destination": "/videos/michele-lindsay-letter-request-taxes",
+      "statusCode": 301
     }
   ]
 }
