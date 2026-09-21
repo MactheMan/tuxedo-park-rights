@@ -36,6 +36,26 @@
       "statusCode": 301
     },
     {
+      "source": "/taxesandinfrastrucure",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastrucure/",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastrucure/index",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastrucure/index.html",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
       "source": "/index",
       "destination": "/",
       "statusCode": 301
