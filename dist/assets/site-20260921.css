@@ -8,3 +8,23 @@
 html{overflow-wrap:break-word}.mast nav{gap:18px}.two>.paper+.paper{margin-top:0}.video-card iframe{display:block;width:100%;aspect-ratio:16/9;border:0}.record-body{max-width:850px;margin:35px auto;font-size:18px;line-height:1.75}.record-body h1{font-size:40px;max-width:100%}.record-body h2{margin-top:30px}.record-body .document,.record-body .attachment,.record-body .document-card{display:block;padding:18px;border:1px solid var(--line);margin:12px 0}.record-body .document>*{display:block}.record-body table{display:block;max-width:100%;overflow-x:auto}.record-body blockquote{border-left:3px solid var(--gold);margin:24px 0;padding:5px 24px;background:var(--cream)}.record-body pre{white-space:pre-wrap;overflow-wrap:anywhere}.record-body a{overflow-wrap:anywhere}.record-body .backlink,.record-body .back{display:none}.contact-note,.form-recipient-note,.mailing-list-note{font-size:14px}.consent-field{display:flex;gap:10px;align-items:flex-start}.consent-field input{width:20px;min-height:20px;flex-shrink:0;margin-top:5px}.mailing-list-honeypot{position:absolute;left:-5000px}.mailing-list-controls{display:flex;gap:12px;align-items:center}.mailing-list-controls input{margin:0;flex:1}.mailing-list-controls .button{width:auto}.participation-sections{max-width:800px;margin:0 auto}.participation-sections>section{margin-bottom:30px}.form-status{font-size:14px;padding-top:12px}.footer-notice{padding-bottom:28px;font-size:13px;color:var(--muted)}.footer-notice p{max-width:900px}.record-item .meta{overflow-wrap:anywhere}details>summary{list-style-position:inside}section[id],div[id]{scroll-margin-top:24px}.watch-page{max-width:900px;margin:auto}.watch-page h1{font-size:38px}.watch-page iframe{width:100%;aspect-ratio:16/9;border:0}.watch-page .video-card{margin:28px 0}.noscript-records{padding:18px;background:var(--cream)}
 @media(max-width:760px){.record-body h1,.watch-page h1{font-size:32px}.record-body{margin:24px auto}.mailing-list-controls{display:block}.mailing-list-controls .button{width:100%;margin-top:12px}.record-body blockquote{padding:12px;margin:18px 0}.onpage{row-gap:0}.video-copy h3{font-size:22px}.record-body .email-meta{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Mobile readability and touch-target refinements. */
+@media(max-width:760px){
+  .disclaimer,.eyebrow{font-size:12px}
+  .onpage a,.textlink,.section-title>a,.breadcrumb a,.footer a,.video-copy>a,.record-item h2 a,.list-row h2 a{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+  }
+  .consent-field{min-height:44px}
+  .consent-field input{width:24px;min-height:24px}
+}
+
+/* Archive card titles use H2 for a logical heading outline. */
+.record-item h2{max-width:850px;font-size:23px;margin:12px 0 8px}
+.record-item h2 a,.list-row h2 a{text-decoration:none}
+.list-row h2{margin-bottom:6px;font-size:23px}
+@media(max-width:760px){
+  .record-item h2,.list-row h2{font-size:22px}
+}

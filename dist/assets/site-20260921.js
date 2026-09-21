@@ -22,12 +22,19 @@ document.querySelectorAll("#topic-filter,#type-filter,#record-query").forEach(el
         .trim()
         .slice(0, 200);
 
-      if (href.startsWith('documents/')) {
+      const resolvedUrl = new URL(href, window.location.href);
+      const isSiteDocument = resolvedUrl.origin === window.location.origin
+        && resolvedUrl.pathname.startsWith('/documents/');
+      const isContactBoardLink = resolvedUrl.origin === window.location.origin
+        && resolvedUrl.pathname === '/participate'
+        && resolvedUrl.hash === '#contact-board';
+
+      if (isSiteDocument) {
         trackEvent('Document Open', {
-          document: decodeURIComponent(href.split('/').pop()),
+          document: decodeURIComponent(resolvedUrl.pathname.split('/').pop()),
           label: label
         });
-      } else if (href === '#contact') {
+      } else if (isContactBoardLink) {
         trackEvent('Contact Board Click', { label: label });
       } else if (/^https?:\/\//.test(href) && !href.includes('tuxedoparkrights.org')) {
         trackEvent('External Link Click', {
