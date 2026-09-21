@@ -1,0 +1,575 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://vitals.vercel-insights.com https://*.vercel-insights.com; form-action 'self' https://dcsny.us6.list-manage.com; object-src 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tuxedoparkrights.org"
+        }
+      ],
+      "destination": "https://tuxedoparkrights.org/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastructure",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastructure/",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastructure/index",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastructure/index.html",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastrucure",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastrucure/",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastrucure/index",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/taxesandinfrastrucure/index.html",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Administrative_Appeal_Two_Constructive_FOIL_Denials_September_15_2026.html",
+      "destination": "/records/foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Administrative_Appeal_Two_Constructive_FOIL_Denials_September_15_2026",
+      "destination": "/records/foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Coalition_Response_FOIL_Deadlines_September_15_2026.html",
+      "destination": "/records/coalition-foil-response-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Coalition_Response_FOIL_Deadlines_September_15_2026",
+      "destination": "/records/coalition-foil-response-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Police_FOIL_Response_September_16_2026.html",
+      "destination": "/records/police-foil-response-september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Police_FOIL_Response_September_16_2026",
+      "destination": "/records/police-foil-response-september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Request_August_20_2026_Meeting_Recording.html",
+      "destination": "/records/august-2026-recording-request",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Request_August_20_2026_Meeting_Recording",
+      "destination": "/records/august-2026-recording-request",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Follow-Up_Proposed_Law_Also_Reaches_Waterfront_Docks.html",
+      "destination": "/records/waterfront-docks-follow-up",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Follow-Up_Proposed_Law_Also_Reaches_Waterfront_Docks",
+      "destination": "/records/waterfront-docks-follow-up",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Sent_FOIL_Administrative_Appeal_Email_September_15_2026.html",
+      "destination": "/records/sent-foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/documents/Sent_FOIL_Administrative_Appeal_Email_September_15_2026",
+      "destination": "/records/sent-foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/thanks",
+      "destination": "/participate",
+      "statusCode": 301
+    },
+    {
+      "source": "/thanks.html",
+      "destination": "/participate",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings/september-2026/featured-comments",
+      "destination": "/videos/michele-lindsay-letter-request-taxes",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings/august-2026.html",
+      "destination": "/meetings/august-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings/august-2026/",
+      "destination": "/meetings/august-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings/september-2026.html",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings/september-2026/",
+      "destination": "/meetings/september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records.html",
+      "destination": "/records",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/",
+      "destination": "/records",
+      "statusCode": 301
+    },
+    {
+      "source": "/updates.html",
+      "destination": "/updates",
+      "statusCode": 301
+    },
+    {
+      "source": "/updates/",
+      "destination": "/updates",
+      "statusCode": 301
+    },
+    {
+      "source": "/participate.html",
+      "destination": "/participate",
+      "statusCode": 301
+    },
+    {
+      "source": "/participate/",
+      "destination": "/participate",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/foil-appeal-september-15-2026.html",
+      "destination": "/records/foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/foil-appeal-september-15-2026/",
+      "destination": "/records/foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/coalition-foil-response-september-15-2026.html",
+      "destination": "/records/coalition-foil-response-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/coalition-foil-response-september-15-2026/",
+      "destination": "/records/coalition-foil-response-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/waterfront-docks-follow-up.html",
+      "destination": "/records/waterfront-docks-follow-up",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/waterfront-docks-follow-up/",
+      "destination": "/records/waterfront-docks-follow-up",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/police-foil-response-september-2026.html",
+      "destination": "/records/police-foil-response-september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/police-foil-response-september-2026/",
+      "destination": "/records/police-foil-response-september-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/august-2026-recording-request.html",
+      "destination": "/records/august-2026-recording-request",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/august-2026-recording-request/",
+      "destination": "/records/august-2026-recording-request",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/sent-foil-appeal-september-15-2026.html",
+      "destination": "/records/sent-foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/records/sent-foil-appeal-september-15-2026/",
+      "destination": "/records/sent-foil-appeal-september-15-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/michele-lindsay-letter-request-taxes.html",
+      "destination": "/videos/michele-lindsay-letter-request-taxes",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/michele-lindsay-letter-request-taxes/",
+      "destination": "/videos/michele-lindsay-letter-request-taxes",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-photoshoots-and-chapter-51.html",
+      "destination": "/videos/september-photoshoots-and-chapter-51",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-photoshoots-and-chapter-51/",
+      "destination": "/videos/september-photoshoots-and-chapter-51",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-david-mcfadden-taxes-and-infrastructure.html",
+      "destination": "/videos/september-david-mcfadden-taxes-and-infrastructure",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-david-mcfadden-taxes-and-infrastructure/",
+      "destination": "/videos/september-david-mcfadden-taxes-and-infrastructure",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/claudio-guazzoni-public-comments.html",
+      "destination": "/videos/claudio-guazzoni-public-comments",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/claudio-guazzoni-public-comments/",
+      "destination": "/videos/claudio-guazzoni-public-comments",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-robin-mcfadden-questions-and-mayor-s-response.html",
+      "destination": "/videos/september-robin-mcfadden-questions-and-mayor-s-response",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-robin-mcfadden-questions-and-mayor-s-response/",
+      "destination": "/videos/september-robin-mcfadden-questions-and-mayor-s-response",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-mayor-introduces-the-second-draft.html",
+      "destination": "/videos/september-mayor-introduces-the-second-draft",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-mayor-introduces-the-second-draft/",
+      "destination": "/videos/september-mayor-introduces-the-second-draft",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-board-and-mcfaddens-rentals-vs-photoshoots.html",
+      "destination": "/videos/september-board-and-mcfaddens-rentals-vs-photoshoots",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-board-and-mcfaddens-rentals-vs-photoshoots/",
+      "destination": "/videos/september-board-and-mcfaddens-rentals-vs-photoshoots",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-commercial-use-chapter-51-and-boathouses.html",
+      "destination": "/videos/september-commercial-use-chapter-51-and-boathouses",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-commercial-use-chapter-51-and-boathouses/",
+      "destination": "/videos/september-commercial-use-chapter-51-and-boathouses",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-permits-exceptions-and-next-steps.html",
+      "destination": "/videos/september-permits-exceptions-and-next-steps",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/september-permits-exceptions-and-next-steps/",
+      "destination": "/videos/september-permits-exceptions-and-next-steps",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/mayor-marc-citrin-boathouse-proposal.html",
+      "destination": "/videos/mayor-marc-citrin-boathouse-proposal",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/mayor-marc-citrin-boathouse-proposal/",
+      "destination": "/videos/mayor-marc-citrin-boathouse-proposal",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-david-mcfadden-public-comments.html",
+      "destination": "/videos/august-david-mcfadden-public-comments",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-david-mcfadden-public-comments/",
+      "destination": "/videos/august-david-mcfadden-public-comments",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-robin-mcfadden-public-comments.html",
+      "destination": "/videos/august-robin-mcfadden-public-comments",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-robin-mcfadden-public-comments/",
+      "destination": "/videos/august-robin-mcfadden-public-comments",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-public-comment-commercial-use-and-chapter-51.html",
+      "destination": "/videos/august-public-comment-commercial-use-and-chapter-51",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-public-comment-commercial-use-and-chapter-51/",
+      "destination": "/videos/august-public-comment-commercial-use-and-chapter-51",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-board-views-on-proposed-restrictions.html",
+      "destination": "/videos/august-board-views-on-proposed-restrictions",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-board-views-on-proposed-restrictions/",
+      "destination": "/videos/august-board-views-on-proposed-restrictions",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-david-mcfadden-response-and-board-exchange.html",
+      "destination": "/videos/august-david-mcfadden-response-and-board-exchange",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-david-mcfadden-response-and-board-exchange/",
+      "destination": "/videos/august-david-mcfadden-response-and-board-exchange",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-further-discussion-and-next-steps.html",
+      "destination": "/videos/august-further-discussion-and-next-steps",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-further-discussion-and-next-steps/",
+      "destination": "/videos/august-further-discussion-and-next-steps",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-resident-concerns-and-boathouse-use.html",
+      "destination": "/videos/august-resident-concerns-and-boathouse-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-resident-concerns-and-boathouse-use/",
+      "destination": "/videos/august-resident-concerns-and-boathouse-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-closing-budget-response.html",
+      "destination": "/videos/august-closing-budget-response",
+      "statusCode": 301
+    },
+    {
+      "source": "/videos/august-closing-budget-response/",
+      "destination": "/videos/august-closing-budget-response",
+      "statusCode": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/meetings/august-2026",
+      "destination": "/meetings/august-2026.html"
+    },
+    {
+      "source": "/meetings/september-2026",
+      "destination": "/meetings/september-2026.html"
+    },
+    {
+      "source": "/records",
+      "destination": "/records.html"
+    },
+    {
+      "source": "/updates",
+      "destination": "/updates.html"
+    },
+    {
+      "source": "/participate",
+      "destination": "/participate.html"
+    },
+    {
+      "source": "/records/foil-appeal-september-15-2026",
+      "destination": "/records/foil-appeal-september-15-2026.html"
+    },
+    {
+      "source": "/records/coalition-foil-response-september-15-2026",
+      "destination": "/records/coalition-foil-response-september-15-2026.html"
+    },
+    {
+      "source": "/records/waterfront-docks-follow-up",
+      "destination": "/records/waterfront-docks-follow-up.html"
+    },
+    {
+      "source": "/records/police-foil-response-september-2026",
+      "destination": "/records/police-foil-response-september-2026.html"
+    },
+    {
+      "source": "/records/august-2026-recording-request",
+      "destination": "/records/august-2026-recording-request.html"
+    },
+    {
+      "source": "/records/sent-foil-appeal-september-15-2026",
+      "destination": "/records/sent-foil-appeal-september-15-2026.html"
+    },
+    {
+      "source": "/videos/michele-lindsay-letter-request-taxes",
+      "destination": "/videos/michele-lindsay-letter-request-taxes.html"
+    },
+    {
+      "source": "/videos/september-photoshoots-and-chapter-51",
+      "destination": "/videos/september-photoshoots-and-chapter-51.html"
+    },
+    {
+      "source": "/videos/september-david-mcfadden-taxes-and-infrastructure",
+      "destination": "/videos/september-david-mcfadden-taxes-and-infrastructure.html"
+    },
+    {
+      "source": "/videos/claudio-guazzoni-public-comments",
+      "destination": "/videos/claudio-guazzoni-public-comments.html"
+    },
+    {
+      "source": "/videos/september-robin-mcfadden-questions-and-mayor-s-response",
+      "destination": "/videos/september-robin-mcfadden-questions-and-mayor-s-response.html"
+    },
+    {
+      "source": "/videos/september-mayor-introduces-the-second-draft",
+      "destination": "/videos/september-mayor-introduces-the-second-draft.html"
+    },
+    {
+      "source": "/videos/september-board-and-mcfaddens-rentals-vs-photoshoots",
+      "destination": "/videos/september-board-and-mcfaddens-rentals-vs-photoshoots.html"
+    },
+    {
+      "source": "/videos/september-commercial-use-chapter-51-and-boathouses",
+      "destination": "/videos/september-commercial-use-chapter-51-and-boathouses.html"
+    },
+    {
+      "source": "/videos/september-permits-exceptions-and-next-steps",
+      "destination": "/videos/september-permits-exceptions-and-next-steps.html"
+    },
+    {
+      "source": "/videos/mayor-marc-citrin-boathouse-proposal",
+      "destination": "/videos/mayor-marc-citrin-boathouse-proposal.html"
+    },
+    {
+      "source": "/videos/august-david-mcfadden-public-comments",
+      "destination": "/videos/august-david-mcfadden-public-comments.html"
+    },
+    {
+      "source": "/videos/august-robin-mcfadden-public-comments",
+      "destination": "/videos/august-robin-mcfadden-public-comments.html"
+    },
+    {
+      "source": "/videos/august-public-comment-commercial-use-and-chapter-51",
+      "destination": "/videos/august-public-comment-commercial-use-and-chapter-51.html"
+    },
+    {
+      "source": "/videos/august-board-views-on-proposed-restrictions",
+      "destination": "/videos/august-board-views-on-proposed-restrictions.html"
+    },
+    {
+      "source": "/videos/august-david-mcfadden-response-and-board-exchange",
+      "destination": "/videos/august-david-mcfadden-response-and-board-exchange.html"
+    },
+    {
+      "source": "/videos/august-further-discussion-and-next-steps",
+      "destination": "/videos/august-further-discussion-and-next-steps.html"
+    },
+    {
+      "source": "/videos/august-resident-concerns-and-boathouse-use",
+      "destination": "/videos/august-resident-concerns-and-boathouse-use.html"
+    },
+    {
+      "source": "/videos/august-closing-budget-response",
+      "destination": "/videos/august-closing-budget-response.html"
+    }
+  ]
+}
